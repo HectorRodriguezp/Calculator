@@ -10,22 +10,23 @@ public class Calculator {
     }
     public int divide(int a, int b) {
         if (b == 0) {
-            System.out.println("Error: Division by zero");
+            System.out.println("Error: Division zero");
             return 0;
         }
         return a / b;
     }
-
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         System.out.println("Addition: " + calculator.add(2, 3));
         System.out.println("Subtraction: " + calculator.subtract(5, 3));
         System.out.println("Multiplication: " + calculator.multiply(2, 3));
-        System.out.println("Division: " + calculator.divide(6, 3));
-        System.out.println("Division by zero: " + calculator.divide(6, 0));
+            System.out.println("Division: " + calculator.divide(6, 3));
+            System.out.println("Division zero: " + calculator.divide(6, 0));
+        }
+
     }
 
-}
+
 
 
 
