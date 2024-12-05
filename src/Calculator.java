@@ -18,6 +18,14 @@ public class Calculator {
     public int modulus(int a, int b) {
         return a % b;
     }
+    public double sqrt(double a) {
+    if (a < 0) {
+        System.out.println("Error: Negative number");
+        return -1;
+    }
+    return Math.sqrt(a);
+}
+
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
             System.out.println("Addition: " + calculator.add(2, 3));
